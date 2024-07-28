@@ -1,0 +1,97 @@
+/* login.css 
+
+/* Styling umum untuk body */
+body {
+    margin: 0; /* Hilangkan margin */
+    padding: 0; /* Hilangkan padding */
+    display: flex; /* Gunakan flexbox untuk centering */
+    justify-content: center; /* Centering horizontal */
+    align-items: center; /* Centering vertical */
+    height: 100vh; /* Tinggi penuh layar */
+    background: #f0f2f5; /* Warna background */
+    font-family: Arial, sans-serif; /* Font utama */
+}
+
+/* Kontainer utama untuk form login */
+.container {
+    display: flex; /* Gunakan flexbox untuk layout */
+    width: 900px; /* Lebar kontainer */
+    background: #fff; /* Warna background */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+}
+
+/* Bagian gambar pada kontainer login */
+.login-image {
+    flex: 1; /* Ambil ruang fleksibel */
+    background: url('../img/img-bg.jpg') no-repeat center center; /* Gambar background */
+    background-size: cover; /* Ukuran gambar penuh */
+    border-top-left-radius: 8px; /* Sudut melengkung atas kiri */
+    border-bottom-left-radius: 8px; /* Sudut melengkung bawah kiri */
+}
+
+/* Bagian form login pada kontainer */
+.login-form {
+    flex: 1; /* Ambil ruang fleksibel */
+    padding: 40px; /* Padding dalam form */
+    display: flex; /* Gunakan flexbox untuk layout */
+    flex-direction: column; /* Susun kolom */
+    justify-content: center; /* Centering konten secara vertical */
+}
+
+/* Styling untuk heading dalam form login */
+.login-form h2 {
+    margin-bottom: 20px; /* Margin bawah */
+    font-size: 28px; /* Ukuran font */
+    color: #333; /* Warna font */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Styling untuk input dalam form login */
+.login-form input {
+    width: 100%; /* Lebar penuh */
+    padding: 15px; /* Padding dalam input */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 25px; /* Sudut melengkung */
+    font-size: 16px; /* Ukuran font */
+    box-sizing: border-box; /* Box sizing border-box */
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+/* Styling untuk tombol dalam form login */
+button {
+    width: 100%; /* Lebar penuh */
+    padding: 15px; /* Padding dalam tombol */
+    border: none; /* Hilangkan border */
+    border-radius: 25px; /* Sudut melengkung */
+    background: #fca311; /* Warna background */
+    color: white; /* Warna teks */
+    font-size: 18px; /* Ukuran font */
+    cursor: pointer; /* Pointer cursor */
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+button:hover {
+    background: #fb8c00; /* Warna background saat hover */
+}
+
+/* Styling untuk pesan error */
+.error {
+    color: red; /* Warna teks */
+    font-size: 14px; /* Ukuran font */
+    margin-bottom: 20px; /* Margin bawah */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Styling untuk link dalam form login */
+a {
+    display: block; /* Tampilkan sebagai block */
+    text-align: center; /* Teks rata tengah */
+    color: #007BFF; /* Warna teks */
+    text-decoration: none; /* Hilangkan dekorasi teks */
+    font-size: 14px; /* Ukuran font */
+}
+
+a:hover {
+    text-decoration: underline; /* Dekorasi teks saat hover */
+}

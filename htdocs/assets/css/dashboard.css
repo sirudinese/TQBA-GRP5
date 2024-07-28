@@ -1,0 +1,206 @@
+/* dashboard.css */
+
+/* Styling umum untuk body */
+body {
+    font-family: Arial, sans-serif; /* Font utama */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox untuk layout */
+}
+
+/* Styling untuk sidebar */
+.sidebar {
+    width: 250px; /* Lebar sidebar */
+    background: #f4f4f4; /* Warna background */
+    min-height: 100vh; /* Tinggi minimum 100% viewport */
+    display: flex;
+    flex-direction: column; /* Kolom untuk elemen sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.logo {
+    padding: 20px;
+    background: #4e73df; /* Warna background logo */
+    text-align: center;
+}
+
+.logo h2 {
+    color: white; /* Warna teks logo */
+    margin: 0; /* Margin 0 */
+}
+
+.sidebar ul {
+    list-style: none; /* Hilangkan bullet list */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none; /* Hilangkan underline */
+    color: #333; /* Warna teks */
+    transition: background 0.3s; /* Transisi background saat hover */
+}
+
+.sidebar ul li a:hover {
+    background: #ddd; /* Warna background saat hover */
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 18px; /* Ukuran ikon */
+}
+
+/* Styling untuk konten utama */
+.main-content {
+    flex: 1; /* Flex-grow 1 untuk mengambil sisa ruang */
+    padding: 20px;
+    background: #fff; /* Warna background */
+}
+
+header {
+    padding: 10px 20px;
+    background: #f4f4f4; /* Warna background header */
+    border-bottom: 1px solid #ddd; /* Garis bawah header */
+}
+
+header h2 {
+    margin: 0; /* Margin 0 */
+}
+
+header h3 {
+    margin: 5px 0 0; /* Margin atas dan bawah */
+    color: #777; /* Warna teks */
+    font-size: 14px; /* Ukuran font */
+    font-weight: normal; /* Berat font normal */
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Lebar sidebar untuk mobile */
+    }
+
+    .sidebar ul li a {
+        padding: 10px 15px; /* Padding untuk mobile */
+    }
+
+    .main-content {
+        padding: 15px; /* Padding untuk mobile */
+    }
+}
+
+/* Styling untuk kartu dashboard */
+.dashboard-cards {
+    display: flex; /* Flexbox untuk kartu */
+    gap: 20px; /* Jarak antar kartu */
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1; /* Flex-grow 1 untuk membagi ruang */
+    padding: 20px;
+    border-radius: 8px; /* Sudut melengkung */
+    color: white; /* Warna teks */
+    position: relative; /* Posisi relatif */
+}
+
+.card .card-info {
+    display: flex; /* Flexbox untuk info kartu */
+    align-items: center;
+    justify-content: space-between; /* Jarak antara elemen */
+}
+
+.card .card-icon {
+    font-size: 30px; /* Ukuran ikon */
+}
+
+.card .card-details h3 {
+    margin: 0; /* Margin 0 */
+    font-size: 24px; /* Ukuran font */
+}
+
+.card .card-details p {
+    margin: 5px 0 0; /* Margin atas dan bawah */
+}
+
+/* Warna khusus untuk kartu */
+.purple {
+    background: #6a1b9a; /* Warna ungu */
+}
+
+.blue {
+    background: #1e88e5; /* Warna biru */
+}
+
+.magenta {
+    background: #c2185b; /* Warna magenta */
+}
+
+/* Kontainer untuk chart */
+.chart-container {
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+/* Styling untuk tabel laba rugi */
+.profit-loss-table {
+    width: 100%; /* Lebar 100% */
+    border-collapse: collapse; /* Gabungkan border */
+    margin-top: 20px; /* Margin atas */
+}
+
+.profit-loss-table th,
+.profit-loss-table td {
+    border: 1px solid #ddd; /* Border */
+    padding: 10px;
+    text-align: left; /* Teks rata kiri */
+}
+
+.profit-loss-table th {
+    background: #f4f4f4; /* Warna background header */
+}
+
+.profit-loss-table tbody tr:nth-child(even) {
+    background: #f9f9f9; /* Warna background baris genap */
+}
+
+.profit-loss-table tbody tr:hover {
+    background: #f1f1f1; /* Warna background saat hover */
+}
+
+.profit-loss-table td.profit {
+    color: green; /* Warna teks untuk profit */
+}
+
+.profit-loss-table td.rugi {
+    color: red; /* Warna teks untuk rugi */
+}
+
+/* Styling untuk tombol */
+.btn {
+    padding: 10px 20px;
+    background: #4e73df; /* Warna background tombol */
+    color: white; /* Warna teks */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Cursor pointer */
+    transition: background 0.3s; /* Transisi background saat hover */
+}
+
+.btn:hover {
+    background: #3b5bbf; /* Warna background saat hover */
+}
+
+/* Styling header konten */
+.content-header {
+    display: flex; /* Flexbox untuk header konten */
+    align-items: center;
+    justify-content: space-between; /* Jarak antara elemen */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,131 @@
+/* crud.css */
+
+/* Styling untuk tabel */
+table {
+    width: 100%; /* Lebar penuh tabel */
+    border-collapse: collapse; /* Gabungkan border */
+    margin-bottom: 20px; /* Margin bawah tabel */
+    background-color: #fff; /* Warna background tabel */
+    border-radius: 8px; /* Sudut melengkung tabel */
+    overflow: hidden; /* Sembunyikan overflow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan tabel */
+}
+
+table th, table td {
+    padding: 10px; /* Padding sel */
+    border: 1px solid #ddd; /* Border sel */
+    text-align: left; /* Teks rata kiri */
+    white-space: nowrap; /* Menjaga teks tetap dalam satu baris */
+}
+
+table th {
+    background-color: #f4f4f4; /* Warna background header */
+    font-weight: bold; /* Teks tebal */
+    color: #333; /* Warna teks header */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna background baris genap */
+}
+
+/* Kontainer untuk tabel */
+.table-container {
+    overflow-x: auto; /* Scroll horizontal */
+    padding: 20px; /* Padding kontainer */
+    background-color: #f8f8f8; /* Warna background kontainer */
+    border-radius: 8px; /* Sudut melengkung kontainer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+}
+
+/* Styling untuk modal form */
+.modal-overlay {
+    display: flex; /* Flexbox untuk centering */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    position: fixed; /* Posisi tetap */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna background semi-transparan */
+    z-index: 1000; /* Z-index tinggi */
+    display: none; /* Default hidden */
+}
+
+.modal-content {
+    background-color: #fff; /* Warna background modal */
+    padding: 20px; /* Padding modal */
+    border-radius: 5px; /* Sudut melengkung modal */
+    width: 50%; /* Lebar modal */
+    max-width: 500px; /* Lebar maksimum modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan modal */
+}
+
+.modal-content form label {
+    display: block; /* Label sebagai block */
+    margin-bottom: 5px; /* Margin bawah label */
+    font-weight: bold; /* Teks tebal */
+}
+
+.modal-content form input,
+.modal-content form select,
+.modal-content form textarea {
+    width: 100%; /* Lebar penuh input */
+    padding: 8px; /* Padding input */
+    margin-bottom: 10px; /* Margin bawah input */
+    border: 1px solid #ddd; /* Border input */
+    border-radius: 3px; /* Sudut melengkung input */
+}
+
+.modal-content form button {
+    padding: 10px 20px; /* Padding tombol */
+    border: none; /* Hilangkan border */
+    border-radius: 3px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Cursor pointer */
+}
+
+.modal-content form button[type="submit"] {
+    background-color: #007bff; /* Warna background tombol submit */
+    color: white; /* Warna teks tombol submit */
+}
+
+.modal-content form button[type="button"] {
+    background-color: #6c757d; /* Warna background tombol batal */
+    color: white; /* Warna teks tombol batal */
+    margin-left: 10px; /* Margin kiri tombol batal */
+}
+
+/* Gaya untuk tombol */
+.add-button {
+    padding: 10px 20px; /* Padding tombol */
+    background-color: #007bff; /* Warna background tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Hilangkan border */
+    border-radius: 3px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Cursor pointer */
+    float: right; /* Float ke kanan */
+    margin-bottom: 20px; /* Margin bawah tombol */
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px; /* Padding tombol edit dan delete */
+    border: none; /* Hilangkan border */
+    border-radius: 3px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Cursor pointer */
+}
+
+.edit-btn {
+    background-color: #28a745; /* Warna background tombol edit */
+    color: white; /* Warna teks tombol edit */
+    margin-right: 5px; /* Margin kanan tombol edit */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Warna background tombol delete */
+    color: white; /* Warna teks tombol delete */
+}
+
+/* Menghilangkan dekorasi teks pada link dalam tabel */
+table a {
+    text-decoration: none; /* Hilangkan underline */
+}
